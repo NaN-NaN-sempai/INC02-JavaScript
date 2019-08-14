@@ -1,0 +1,58 @@
+<html>
+<head>
+    <link rel="stylesheet" href="estilo.css">
+    <script src="js.js"></script>
+</head>
+<body>
+    <div align=center class="divtd3" style="width: 45%">
+    <button align="right" class="button" style="vertical-align:middle" onclick="inserir()"><span>Inserir</span></button>
+    <button align="right" class="button" style="vertical-align:middle" onclick="listar()"><span>Listar</span></button>   
+    </div>
+
+    <div id="mov1" style="position: relative; bottom: 1000px;">
+	<div class="divtd" align="center" style="width: 45%;">
+    <button align="right" class="button" style="vertical-align:middle" onclick="salvar()"><span>Salvar</span></button>
+    <button align="right" class="button" style="vertical-align:middle" onclick="carregar()"><span>Carregar</span></button>
+    <button align="right" class="button" style="vertical-align:middle" onclick="apagar()"><span>Apagar</span></button>
+    <br>
+
+    <input class="inputcls" id="n0" placeholder="Nome do aluno">
+    <input class="inputcls" id="n1" placeholder="Nota 1">
+    <input class="inputcls" id="n2" placeholder="Nota 2">
+    <input class="inputcls" id="n3" placeholder="Nota 3">
+    <button class="button" style="vertical-align:middle" onclick="processar()"><span>Processar</span></button>
+    </div>
+    </div>
+
+    <br><br>
+
+    <div id="mov2" class="divtd2" align="center" style="position: relative; bottom: 1000px; width: 45%;">
+    <div class="divres">
+        <table style="width:100%">
+            <tr>
+                <th colspan="2">Nome</th>
+                <th>Nota 1</th>
+                <th>Nota 2</th>
+                <th>Nota 3</th>
+                <th>Media</th>
+                <th>Nota para final</th>
+                <th>Cituação</th>
+            </tr>
+            <tr>
+                <td colspan="2" id="nome"></td>
+                <td style="text-align: center" id="rn1"></td>
+                <td style="text-align: center" id="rn2"></td>
+                <td style="text-align: center" id="rn3"></td>
+                <td style="text-align: center" id="rme"></td>
+                <td style="text-align: center" id="rfinal"></td>
+                <td style="text-align: center" id="cituacao"></td>
+            </tr>
+        </table>
+    </div>
+    <br><br>
+	</div>
+    </div>
+</body>
+
+
+</html>
